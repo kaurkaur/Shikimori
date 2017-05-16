@@ -1,3 +1,4 @@
+/*Запятая*/
 .p-user_history-index .history-page .history-interval p:before{
 	content: ",";
 	background: #fff;
@@ -10,6 +11,7 @@
 	text-align: center;
 	width:8px;
 }
+/*Дата+Время*/
 .p-user_history-index .history-page .history-interval p .date{font-size: 0}
 .p-user_history-index .history-page .history-interval p .date:before,
 .p-user_history-index .history-page .history-interval p .date:after{
@@ -18,11 +20,13 @@
 	font-size: 12px;
 	overflow:hidden;
 }
+/*Время*/
 .p-user_history-index .history-page .history-interval p .date:after{
 	content: attr(datetime);
 	padding-right:64px;
 	width:50px
 }
+/*Дата*/
 .p-user_history-index .history-page .history-interval p .date:before{
 	background: #fff;
 	margin-right: -71px;
