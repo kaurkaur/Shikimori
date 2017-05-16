@@ -1,0 +1,429 @@
+	.p-user_history-index .history-page .history-interval p:before{
+		content: ",";
+		background: #fff;
+		color: #acb1b4;
+		display: block;
+		font-family: monospace;
+		margin-top:-1px;
+		position: absolute;
+		right:36px;
+		text-align: center;
+		width:8px;
+	}
+	.p-user_history-index .history-page .history-interval p .date{font-size: 0}
+	.p-user_history-index .history-page .history-interval p .date:before,
+	.p-user_history-index .history-page .history-interval p .date:after{
+		display:inline-block;
+		font-family: monospace;
+		font-size: 12px;
+		overflow:hidden
+	}
+	.p-user_history-index .history-page .history-interval p .date:after{
+		content: attr(datetime);
+		padding-right:64px;
+		width:50px
+	}
+  .p-user_history-index .history-page .history-interval p .date:before{
+		background: #fff;
+		margin-right: -71px;
+		position: relative;
+		white-space: nowrap;
+		width:78px;		
+		z-index: 1
+	}
+	
+  /*Январь*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-01"]:before{content: "01 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-02"]:before{content: "02 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-03"]:before{content: "03 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-04"]:before{content: "04 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-05"]:before{content: "05 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-06"]:before{content: "06 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-07"]:before{content: "07 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-08"]:before{content: "08 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-09"]:before{content: "09 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-10"]:before{content: "10 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-11"]:before{content: "11 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-12"]:before{content: "12 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-13"]:before{content: "13 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-14"]:before{content: "14 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-15"]:before{content: "15 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-16"]:before{content: "16 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-17"]:before{content: "17 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-18"]:before{content: "18 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-19"]:before{content: "19 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-20"]:before{content: "20 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-21"]:before{content: "21 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-22"]:before{content: "22 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-23"]:before{content: "23 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-24"]:before{content: "24 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-25"]:before{content: "25 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-26"]:before{content: "26 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-27"]:before{content: "27 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-28"]:before{content: "28 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-29"]:before{content: "29 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-30"]:before{content: "30 янв "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-01-31"]:before{content: "31 янв "attr(datetime)}
+	
+	/*Февраль*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-01"]:before{content: "01 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-02"]:before{content: "02 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-03"]:before{content: "03 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-04"]:before{content: "04 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-05"]:before{content: "05 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-06"]:before{content: "06 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-07"]:before{content: "07 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-08"]:before{content: "08 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-09"]:before{content: "09 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-10"]:before{content: "10 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-11"]:before{content: "11 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-12"]:before{content: "12 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-13"]:before{content: "13 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-14"]:before{content: "14 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-15"]:before{content: "15 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-16"]:before{content: "16 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-17"]:before{content: "17 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-18"]:before{content: "18 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-19"]:before{content: "19 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-20"]:before{content: "20 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-21"]:before{content: "21 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-22"]:before{content: "22 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-23"]:before{content: "23 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-24"]:before{content: "24 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-25"]:before{content: "25 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-26"]:before{content: "26 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-27"]:before{content: "27 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-28"]:before{content: "28 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-29"]:before{content: "29 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-30"]:before{content: "30 фев "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-02-31"]:before{content: "31 фев "attr(datetime)}
+	
+	/*Март*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-01"]:before{content: "01 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-02"]:before{content: "02 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-03"]:before{content: "03 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-04"]:before{content: "04 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-05"]:before{content: "05 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-06"]:before{content: "06 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-07"]:before{content: "07 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-08"]:before{content: "08 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-09"]:before{content: "09 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-10"]:before{content: "10 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-11"]:before{content: "11 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-12"]:before{content: "12 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-13"]:before{content: "13 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-14"]:before{content: "14 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-15"]:before{content: "15 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-16"]:before{content: "16 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-17"]:before{content: "17 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-18"]:before{content: "18 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-19"]:before{content: "19 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-20"]:before{content: "20 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-21"]:before{content: "21 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-22"]:before{content: "22 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-23"]:before{content: "23 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-24"]:before{content: "24 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-25"]:before{content: "25 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-26"]:before{content: "26 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-27"]:before{content: "27 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-28"]:before{content: "28 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-29"]:before{content: "29 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-30"]:before{content: "30 мар "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-03-31"]:before{content: "31 мар "attr(datetime)}	
+	
+	/*Апрель*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-01"]:before{content: "01 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-02"]:before{content: "02 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-03"]:before{content: "03 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-04"]:before{content: "04 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-05"]:before{content: "05 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-06"]:before{content: "06 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-07"]:before{content: "07 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-08"]:before{content: "08 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-09"]:before{content: "09 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-10"]:before{content: "10 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-11"]:before{content: "11 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-12"]:before{content: "12 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-13"]:before{content: "13 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-14"]:before{content: "14 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-15"]:before{content: "15 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-16"]:before{content: "16 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-17"]:before{content: "17 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-18"]:before{content: "18 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-19"]:before{content: "19 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-20"]:before{content: "20 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-21"]:before{content: "21 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-22"]:before{content: "22 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-23"]:before{content: "23 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-24"]:before{content: "24 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-25"]:before{content: "25 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-26"]:before{content: "26 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-27"]:before{content: "27 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-28"]:before{content: "28 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-29"]:before{content: "29 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-30"]:before{content: "30 апр "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-04-31"]:before{content: "31 апр "attr(datetime)}
+	
+	/*Май*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-01"]:before{content: "01 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-02"]:before{content: "02 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-03"]:before{content: "03 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-04"]:before{content: "04 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-05"]:before{content: "05 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-06"]:before{content: "06 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-07"]:before{content: "07 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-08"]:before{content: "08 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-09"]:before{content: "09 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-10"]:before{content: "10 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-11"]:before{content: "11 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-12"]:before{content: "12 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-13"]:before{content: "13 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-14"]:before{content: "14 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-15"]:before{content: "15 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-16"]:before{content: "16 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-17"]:before{content: "17 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-18"]:before{content: "18 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-19"]:before{content: "19 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-20"]:before{content: "20 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-21"]:before{content: "21 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-22"]:before{content: "22 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-23"]:before{content: "23 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-24"]:before{content: "24 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-25"]:before{content: "25 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-26"]:before{content: "26 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-27"]:before{content: "27 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-28"]:before{content: "28 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-29"]:before{content: "29 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-30"]:before{content: "30 мая "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-05-31"]:before{content: "31 мая "attr(datetime)}
+	
+	/*Июнь*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-01"]:before{content: "01 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-02"]:before{content: "02 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-03"]:before{content: "03 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-04"]:before{content: "04 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-05"]:before{content: "05 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-06"]:before{content: "06 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-07"]:before{content: "07 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-08"]:before{content: "08 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-09"]:before{content: "09 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-10"]:before{content: "10 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-11"]:before{content: "11 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-12"]:before{content: "12 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-13"]:before{content: "13 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-14"]:before{content: "14 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-15"]:before{content: "15 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-16"]:before{content: "16 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-17"]:before{content: "17 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-18"]:before{content: "18 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-19"]:before{content: "19 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-20"]:before{content: "20 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-21"]:before{content: "21 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-22"]:before{content: "22 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-23"]:before{content: "23 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-24"]:before{content: "24 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-25"]:before{content: "25 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-26"]:before{content: "26 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-27"]:before{content: "27 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-28"]:before{content: "28 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-29"]:before{content: "29 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-30"]:before{content: "30 июн "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-06-31"]:before{content: "31 июн "attr(datetime)}
+	
+	/*Июль*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-01"]:before{content: "01 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-02"]:before{content: "02 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-03"]:before{content: "03 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-04"]:before{content: "04 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-05"]:before{content: "05 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-06"]:before{content: "06 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-07"]:before{content: "07 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-08"]:before{content: "08 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-09"]:before{content: "09 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-10"]:before{content: "10 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-11"]:before{content: "11 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-12"]:before{content: "12 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-13"]:before{content: "13 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-14"]:before{content: "14 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-15"]:before{content: "15 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-16"]:before{content: "16 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-17"]:before{content: "17 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-18"]:before{content: "18 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-19"]:before{content: "19 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-20"]:before{content: "20 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-21"]:before{content: "21 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-22"]:before{content: "22 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-23"]:before{content: "23 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-24"]:before{content: "24 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-25"]:before{content: "25 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-26"]:before{content: "26 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-27"]:before{content: "27 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-28"]:before{content: "28 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-29"]:before{content: "29 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-30"]:before{content: "30 июл "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-07-31"]:before{content: "31 июл "attr(datetime)}
+	
+	/*Август*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-01"]:before{content: "01 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-02"]:before{content: "02 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-03"]:before{content: "03 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-04"]:before{content: "04 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-05"]:before{content: "05 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-06"]:before{content: "06 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-07"]:before{content: "07 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-08"]:before{content: "08 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-09"]:before{content: "09 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-10"]:before{content: "10 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-11"]:before{content: "11 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-12"]:before{content: "12 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-13"]:before{content: "13 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-14"]:before{content: "14 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-15"]:before{content: "15 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-16"]:before{content: "16 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-17"]:before{content: "17 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-18"]:before{content: "18 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-19"]:before{content: "19 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-20"]:before{content: "20 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-21"]:before{content: "21 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-22"]:before{content: "22 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-23"]:before{content: "23 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-24"]:before{content: "24 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-25"]:before{content: "25 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-26"]:before{content: "26 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-27"]:before{content: "27 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-28"]:before{content: "28 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-29"]:before{content: "29 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-30"]:before{content: "30 авг "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-08-31"]:before{content: "31 авг "attr(datetime)}
+	
+	/*Сентябрь*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-01"]:before{content: "01 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-02"]:before{content: "02 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-03"]:before{content: "03 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-04"]:before{content: "04 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-05"]:before{content: "05 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-06"]:before{content: "06 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-07"]:before{content: "07 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-08"]:before{content: "08 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-09"]:before{content: "09 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-10"]:before{content: "10 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-11"]:before{content: "11 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-12"]:before{content: "12 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-13"]:before{content: "13 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-14"]:before{content: "14 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-15"]:before{content: "15 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-16"]:before{content: "16 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-17"]:before{content: "17 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-18"]:before{content: "18 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-19"]:before{content: "19 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-20"]:before{content: "20 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-21"]:before{content: "21 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-22"]:before{content: "22 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-23"]:before{content: "23 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-24"]:before{content: "24 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-25"]:before{content: "25 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-26"]:before{content: "26 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-27"]:before{content: "27 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-28"]:before{content: "28 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-29"]:before{content: "29 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-30"]:before{content: "30 сен "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-09-31"]:before{content: "31 сен "attr(datetime)}
+	
+	/*Октябрь*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-01"]:before{content: "01 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-02"]:before{content: "02 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-03"]:before{content: "03 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-04"]:before{content: "04 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-05"]:before{content: "05 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-06"]:before{content: "06 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-07"]:before{content: "07 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-08"]:before{content: "08 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-09"]:before{content: "09 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-10"]:before{content: "10 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-11"]:before{content: "11 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-12"]:before{content: "12 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-13"]:before{content: "13 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-14"]:before{content: "14 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-15"]:before{content: "15 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-16"]:before{content: "16 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-17"]:before{content: "17 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-18"]:before{content: "18 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-19"]:before{content: "19 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-20"]:before{content: "20 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-21"]:before{content: "21 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-22"]:before{content: "22 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-23"]:before{content: "23 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-24"]:before{content: "24 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-25"]:before{content: "25 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-26"]:before{content: "26 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-27"]:before{content: "27 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-28"]:before{content: "28 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-29"]:before{content: "29 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-30"]:before{content: "30 окт "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-10-31"]:before{content: "31 окт "attr(datetime)}
+	
+	/*Ноябрь*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-01"]:before{content: "01 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-02"]:before{content: "02 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-03"]:before{content: "03 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-04"]:before{content: "04 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-05"]:before{content: "05 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-06"]:before{content: "06 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-07"]:before{content: "07 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-08"]:before{content: "08 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-09"]:before{content: "09 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-10"]:before{content: "10 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-11"]:before{content: "11 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-12"]:before{content: "12 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-13"]:before{content: "13 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-14"]:before{content: "14 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-15"]:before{content: "15 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-16"]:before{content: "16 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-17"]:before{content: "17 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-18"]:before{content: "18 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-19"]:before{content: "19 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-20"]:before{content: "20 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-21"]:before{content: "21 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-22"]:before{content: "22 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-23"]:before{content: "23 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-24"]:before{content: "24 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-25"]:before{content: "25 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-26"]:before{content: "26 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-27"]:before{content: "27 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-28"]:before{content: "28 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-29"]:before{content: "29 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-30"]:before{content: "30 ноя "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-11-31"]:before{content: "31 ноя "attr(datetime)}
+	
+	/*Декабрь*/
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-01"]:before{content: "01 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-02"]:before{content: "02 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-03"]:before{content: "03 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-04"]:before{content: "04 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-05"]:before{content: "05 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-06"]:before{content: "06 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-07"]:before{content: "07 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-08"]:before{content: "08 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-09"]:before{content: "09 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-10"]:before{content: "10 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-11"]:before{content: "11 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-12"]:before{content: "12 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-13"]:before{content: "13 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-14"]:before{content: "14 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-15"]:before{content: "15 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-16"]:before{content: "16 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-17"]:before{content: "17 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-18"]:before{content: "18 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-19"]:before{content: "19 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-20"]:before{content: "20 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-21"]:before{content: "21 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-22"]:before{content: "22 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-23"]:before{content: "23 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-24"]:before{content: "24 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-25"]:before{content: "25 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-26"]:before{content: "26 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-27"]:before{content: "27 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-28"]:before{content: "28 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-29"]:before{content: "29 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-30"]:before{content: "30 дек "attr(datetime)}
+	.p-user_history-index .history-page .history-interval p .date[datetime*="-12-31"]:before{content: "31 дек "attr(datetime)}
