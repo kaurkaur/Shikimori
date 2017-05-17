@@ -1,12 +1,12 @@
 /*COLORS*/
-/*Аниме Просмотренно*/
+/*Аниме Просмотрено*/
 .c-lists-info .b-stats_bar.anime .bar > div.first:before,
 .c-lists-info .b-stats_bar.anime .bar > div.first:after,
 .c-lists-info .b-stats_bar.anime .stat_names .stat_name a[href*="completed"]:before{
 	border-color:transparent;
 	background-color:#4682B4
 }
-/*Аниме Запланированно*/
+/*Аниме Запланировано*/
 .c-lists-info .b-stats_bar.anime .bar > div.second:before,
 .c-lists-info .b-stats_bar.anime .bar > div.second:after,
 .c-lists-info .b-stats_bar.anime .stat_names .stat_name a[href*="planned"]:before,
@@ -23,7 +23,7 @@
 	border-color: transparent;
 	background-color:#B78BC7
 }
-/*Манга Запланированно*/
+/*Манга Запланировано*/
 .c-lists-info .b-stats_bar.manga .bar > div.second:before,
 .c-lists-info .b-stats_bar.manga .bar > div.second:after,
 .c-lists-info .b-stats_bar.manga .stat_names .stat_name a[href*="planned"]:before,
