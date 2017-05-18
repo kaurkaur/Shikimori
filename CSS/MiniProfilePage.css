@@ -575,3 +575,20 @@ a{
 	margin: 0 0 15px 0;
 	bottom: -15px
 }
+
+/*Раскомментировать если отключена статистика манги
+.p-profiles .b-stats_bar:first-child {
+	border: 0;
+	padding:0;
+	width:100%;
+}
+.p-profiles .b-stats_bar a {
+	display: block;
+}
+.b-stats_bar .stat_names{
+	width: 100%;
+}
+.b-stats_bar .stat_names .stat_name {
+	margin-right: 5px;
+}
+*/
