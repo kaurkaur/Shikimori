@@ -1,3 +1,10 @@
+/*
+ * History Dates
+ * Shikimori.org – CSS Theme
+ * MIT License
+ * Copyright (c) 2017 kaur
+ */
+
 /*Запятая*/
 .p-user_history-index .history-page .history-interval p:before{
 	content: ",";
