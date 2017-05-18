@@ -1,3 +1,10 @@
+/*
+ * Loader
+ * Shikimori.org – CSS Theme
+ * MIT License
+ * Copyright (c) 2017 kaur
+ */
+
 /*IMAGES*/
 body:before{
 	background-image: url(//raw.githubusercontent.com/kaurkaur/Shikimori/master/img/loader/loader1.gif)
