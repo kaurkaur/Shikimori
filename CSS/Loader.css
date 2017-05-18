@@ -1,0 +1,40 @@
+/*IMAGES*/
+body:before{
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/b4/9d/15/b49d151773fc5f24d6a48165d79e20cb.gif)
+}
+/*IMAGES:END*/
+
+/*LOADER*/
+body:before{
+	content: "Загрузка...";
+	background-size: 400px;
+	background-repeat:no-repeat;
+	background-position-x: center;
+	background-position-y: 42vh;
+	background-color: #fff;
+	color: #666;
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	overflow: hidden;
+	padding-top: 200px;
+	position: fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width: 0%;
+	z-index: 10000;
+	animation: 1.5s ease-out 0s 1 slide;
+	-webkit-animation: 1.5s ease-out 0s 1 slide;
+	-o-animation: 1.5s ease-out 0s 1 slide
+}
+
+@keyframes slide {
+	0% {width:100%;opacity: 0}
+	5% {width:100%;opacity: 1}
+	80% {width:100%;opacity: 1}
+	95% {width:100%}
+	100% {opacity: 0}
+}
+/*LOADER:END*/
