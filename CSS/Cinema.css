@@ -1,0 +1,165 @@
+.p-anime_videos .l-page{
+	position: static
+}
+
+/* Красивенький счетчик эпизодов :3 */
+.b-video_player .cc-player_controls .episode-num input{
+	background: transparent;
+	border-width: 0 0 1px 0;
+	text-align: center
+}
+
+@media only screen and (min-width: 1025px) {
+	/*Фон тоглера*/
+	.p-anime_videos .l-page .menu-toggler {
+		background: rgba(238, 238, 238,.75);
+		border: 1px solid #bbb;
+		border-radius: 4px;
+		color: #333;
+		display: block;
+		font-weight: 700;
+		height: 75px;
+		margin: 40px 10px 0 0;
+		padding: 5px;
+		position: fixed;
+		text-align: center;
+		width: 75px
+	}
+	/*Текст тоглера*/
+	.p-anime_videos .l-page .menu-toggler:before{
+		content: "Широкий экран" 
+	}
+	/*Сброс старых настроек тоглера*/
+	.p-anime_videos .l-page .menu-toggler .toggler{
+		background: transparent;
+		border: 0;
+		padding: 0
+	}
+
+	/*Общие настройки элементов тоглера*/
+	.p-anime_videos .l-page .menu-toggler .toggler:before,
+	.p-anime_videos .l-page .menu-toggler .toggler:after{
+		content: "";
+		transform: none;
+		position: absolute;
+		display: block;
+		border-radius: 50px;
+		border: 1px solid #bbb;
+		left: calc(50% - 12.5px);
+		-webkit-transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out
+	}
+	/*Круг тоглера*/
+	.p-anime_videos .l-page .menu-toggler .toggler:before{
+		width: 13px;
+		height: 13px;
+		background-color: #fff;
+		bottom: 2.5px;
+		z-index: 2
+	}
+	/*Полоска тоглера*/
+	.p-anime_videos .l-page .menu-toggler .toggler:after{
+		bottom:15px;
+		width: 23px;
+		height: 7px;
+		background-color: #ddd
+	}
+
+	/*Фон тоглера Широкий экран*/
+	.p-anime_videos .l-page.menu-expanded .menu-toggler {
+		border: 1px solid #222;
+		background: rgba(51, 51, 51,.75);
+		color: #ddd
+	}
+	/*Круг тоглера Широкий экран*/
+	.p-anime_videos .l-page.menu-expanded .menu-toggler .toggler:before{
+		background-color: #2ECC40;
+		border-color:transparent;
+		left:50%
+	}
+	/*Полоска тоглера Широкий экран*/
+	.p-anime_videos .l-page.menu-expanded .menu-toggler .toggler:after{
+		background-color: #1f912c;
+		border-color:transparent
+	}
+
+	/*Цвет ссылок и текста широкий экран*/
+	.p-anime_videos .l-page.menu-expanded .head h2,
+	.p-anime_videos .l-page.menu-expanded .cc-anime_video_report-new{
+		color: #ddd;
+		padding:0 15px 0 0
+	}
+	.p-anime_videos .l-page.menu-expanded .cc-anime_video_report-new select{
+		color:#333
+	}
+
+	.p-anime_videos .l-page.menu-expanded .head a,
+	.p-anime_videos .l-page.menu-expanded .head a:before,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls a,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls a .icon,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .c-control,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .c-control .icon,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .c-control span,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .c-control b,
+	.p-anime_videos .l-page.menu-expanded .cc-anime_video_report-new .cancel{
+		color: #aaa
+	}
+	.p-anime_videos .l-page.menu-expanded .head a:hover,
+	.p-anime_videos .l-page.menu-expanded .head a:hover:before,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls a:hover,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls a:hover .icon,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .c-control:hover,
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .c-control:hover .icon,
+	.p-anime_videos .l-page.menu-expanded .cc-anime_video_report-new .cancel:hover{
+		color: #fff
+	}
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls .episode-num input{
+		color:#ddd
+	}
+
+	.p-anime_videos {
+		position: relative;
+		height: 100%
+	}
+	.p-anime_videos .l-page.menu-expanded .cc{
+		margin-top: 725px
+	}
+	.p-anime_videos .l-page.menu-expanded .head{
+		position: relative;
+		z-index: 2
+	}
+	/*Оверлей странички*/
+	.p-anime_videos .l-page.menu-expanded:before{
+		content: "";
+		background-color: rgba(0,0,0,0.85);
+		background-image: url(https://raw.githubusercontent.com/kaurkaur/Shikimori/master/img/overlay/overlay.png);
+		width: calc(100% + 20px);
+		position: absolute;
+		display: block;
+		z-index: 1
+	}
+	.p-anime_videos .l-page.menu-expanded .player-container{
+		position: absolute;
+		z-index: 2;
+		width: 2000px;
+		left:-15px
+	}
+	.p-anime_videos.x1200 .l-page.menu-expanded .player-container{max-width: 1200px}
+	.p-anime_videos.x1000 .l-page.menu-expanded .player-container{max-width: 1000px}
+	/*Высота фрейма с видосиком*/
+	.p-anime_videos .l-page.menu-expanded .player-area,
+	.p-anime_videos .l-page.menu-expanded .player-placeholder,
+	.p-anime_videos .l-page.menu-expanded iframe {
+		height: 618.25px !important
+	}
+	/*Блок контроллов*/
+	.p-anime_videos .l-page.menu-expanded .cc-player_controls{
+		background: #111;
+		padding: 25px 0 0 0;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+		border:1px solid #222;
+		border-top:0
+	}
+}
