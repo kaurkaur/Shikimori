@@ -36,8 +36,6 @@
   position: relative;
   width: 72px; /* Размер даты */
   margin-right: 10px; /* Размер запятой */
-  white-space: nowrap;
-  z-index: 1;
 }
 
 /* Время */
