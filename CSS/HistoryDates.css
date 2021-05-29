@@ -86,3 +86,13 @@
 .p-user_history-index .history-page .history-interval p .date::before{
 	content: var(--HD-day)' 'var(--HD-month)' 'attr(datetime);
 }
+
+/* FF FIX */
+@-moz-document url-prefix() {
+  .p-user_history-index .history-page .history-interval p .date::before {
+    width: 78px; /* Размер даты */
+  }
+  .p-user_history-index .history-page .history-interval p .date::after {
+    text-indent: -78px; /* Размер даты */
+  }
+}
