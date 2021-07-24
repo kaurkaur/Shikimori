@@ -1,0 +1,474 @@
+/*:root {
+	--achivment-rename: 'Ачивки';
+
+	--achivment-progressbar-position-b: 6px;
+
+	--achivment-progressbar-position-lr: 8px;
+
+	--achivment-progressbar-height: 3px;
+
+	--achivment-progressbar-border: 1px;
+
+	--achivment-margin: 1%;
+
+	--achivment-sort: -1;
+
+	--achivment-progressbar-bg: url(https://sun9-19.userapi.com/impg/bTGow4bi6jDsq0vtsjaw_MPoBxM6JPvm4HMqcg/uWM0Qehw29c.jpg?size=109x109&quality=96&sign=55bdc2a1da9426e09cac8cfce3f64520&type=album);
+
+	--achivment-title-height: calc(20px + var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2 + var(--achivment-progressbar-position-b));
+}*/
+.p-profiles-show .achievements {
+	display: flex;
+	flex-direction: column;
+}
+.p-profiles-show .achievements .cc-3,
+.p-profiles-show .achievements .c-column {
+	margin: 0;
+	width: 100%;
+}
+.p-profiles-show .achievements .cc-achievements .b-achievement,
+.p-profiles-show .achievements .cc-achievements .b-achievement:last-child,
+.p-profiles-show .achievements .cc-franchises .b-badge,
+.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(4n) {
+	width: calc(100%/4 - var(--achivment-margin));
+	margin-right: var(--achivment-margin)!important;
+	margin-bottom: var(--achivment-margin);
+	order: calc(var(--achivment-progress)*var(--achivment-sort));
+}
+.p-profiles-show .cc-achievements,
+.p-profiles-show .cc-franchises {
+	width: calc(100% + var(--achivment-margin));
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.p-profiles-show .achievements .header {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background: var(--headline-background-color);
+	border-left: 5px solid var(--headline-border-color);
+	color: var(--headline-color);
+	font-family: var(--font-alt);
+	font-weight: 700;
+	letter-spacing: 0.13px;
+	margin-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 30px;
+	padding: 0 10px;
+	width: 100%;
+}
+.p-profiles-show .achievements .cc-3 .c-column .header .title:before {
+	content: var(--achivment-rename)': ';
+}
+.p-profiles-show .achievements .subheadline {
+	order: 1;
+	border: 0;
+	padding: 0;
+	margin: 10px 0;
+	background: transparent;
+}
+.p-profiles-show .achievements .subheadline a {
+	order: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border: 1px solid #e6e6ea;
+	display: block;
+	font-size: 0px;
+	font-family: var(--font-alt);
+	cursor: pointer;
+	font-weight: 600;
+	line-height: 1;
+	min-width: 154px;
+	padding: 8px 20px;
+	text-align: center;
+	transition: background-color 0.25s ease, border-color 0.25s ease;
+	user-select: none;
+	background-color: #456;
+	border-color: #3e4d5d;
+	color: #fff;
+	text-decoration: none;
+}
+.p-profiles-show .achievements .subheadline a:hover {
+	background-color: #1d78b7;
+	border-color: #1c72ae;
+	color: #fff;
+}
+.p-profiles-show .achievements .subheadline a:active {
+	background-color: #155785;
+	border-color: #2984c4;
+	color: #fff;
+}
+.subheadline > a::before,
+.subheadline > a:hover::before,
+.subheadline > a:focus::before,
+.subheadline > a:active::before {
+	font-family: var(--font-alt);
+	letter-spacing: normal;
+	content: "Все "var(--achivment-rename);
+	color: inherit;
+	text-transform: inherit;
+	position: static;
+	right: auto;
+	font-size: 15px;
+}
+.b-badge::before {
+	text-align: left;
+	top: auto;
+}
+.b-achievement.is-badge::before,
+.p-profiles-show .achievements .cc-franchises .b-badge::before {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background: rgba(17, 34, 51, 0.6);
+	color: #fff;
+	bottom: 0;
+	content: attr(data-title)" ("attr(data-progress)"%)";
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: var(--achivment-title-height);
+	font-weight: 600;
+	font-size: 11px;
+	left: 0;
+	line-height: 20px;
+	padding: 0 8px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: var(--achivment-progressbar-position-lr) calc(var(--achivment-title-height) - var(--achivment-progressbar-position-b) - var(--achivment-progressbar-height) - var(--achivment-progressbar-border)*2);
+	background-size: calc(100% - var(--achivment-progressbar-position-lr)*2) calc(var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2);
+	background-image: var(--achivment-progressbar-bg);
+}
+.p-profiles-show .achievements .cc-franchises .b-badge::before {
+	content: attr(original-title)" ("attr(data-progress)"%)";
+	display: block;
+	opacity: 1;
+}
+.b-achievement.is-badge::after,
+.p-profiles-show .achievements .cc-franchises .b-badge::after {
+	content: '';
+	position: absolute;
+	height: var(--achivment-progressbar-height);
+	z-index: 1;
+	background: #6295bd;
+	left: calc(var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border));
+	bottom: calc(var(--achivment-progressbar-position-b) + var(--achivment-progressbar-border));
+	width: calc(1% * var(--achivment-progress) - (var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border))*2);
+}
+.b-achievement .c-image .inner a .border {
+	border-width: 1px;
+}
+.p-profiles-show .achievements .cc-franchises .b-badge {
+	position: relative;
+}
+.b-badge.level-0:not(:hover) {
+	filter: grayscale(0);
+}
+.b-badge.level-0:not(:hover) img {
+	opacity: 1;
+}
+/*Переменные для прогрессбара и сортировок*/
+[data-progress="1"] {
+	--achivment-progress: 1
+}
+[data-progress="2"] {
+	--achivment-progress: 2
+}
+[data-progress="3"] {
+	--achivment-progress: 3
+}
+[data-progress="4"] {
+	--achivment-progress: 7
+}
+[data-progress="5"] {
+	--achivment-progress: 7
+}
+[data-progress="6"] {
+	--achivment-progress: 7.5
+}
+[data-progress="7"] {
+	--achivment-progress: 7.5
+}
+[data-progress="8"] {
+	--achivment-progress: 8
+}
+[data-progress="9"] {
+	--achivment-progress: 9
+}
+[data-progress="10"] {
+	--achivment-progress: 10
+}
+[data-progress="11"] {
+	--achivment-progress: 11
+}
+[data-progress="12"] {
+	--achivment-progress: 12
+}
+[data-progress="13"] {
+	--achivment-progress: 13
+}
+[data-progress="14"] {
+	--achivment-progress: 14
+}
+[data-progress="15"] {
+	--achivment-progress: 15
+}
+[data-progress="16"] {
+	--achivment-progress: 16
+}
+[data-progress="17"] {
+	--achivment-progress: 17
+}
+[data-progress="18"] {
+	--achivment-progress: 18
+}
+[data-progress="19"] {
+	--achivment-progress: 19
+}
+[data-progress="20"] {
+	--achivment-progress: 20
+}
+[data-progress="21"] {
+	--achivment-progress: 21
+}
+[data-progress="22"] {
+	--achivment-progress: 22
+}
+[data-progress="23"] {
+	--achivment-progress: 23
+}
+[data-progress="24"] {
+	--achivment-progress: 24
+}
+[data-progress="25"] {
+	--achivment-progress: 25
+}
+[data-progress="26"] {
+	--achivment-progress: 26
+}
+[data-progress="27"] {
+	--achivment-progress: 27
+}
+[data-progress="28"] {
+	--achivment-progress: 28
+}
+[data-progress="29"] {
+	--achivment-progress: 29
+}
+[data-progress="30"] {
+	--achivment-progress: 30
+}
+[data-progress="31"] {
+	--achivment-progress: 31
+}
+[data-progress="32"] {
+	--achivment-progress: 32
+}
+[data-progress="33"] {
+	--achivment-progress: 33
+}
+[data-progress="34"] {
+	--achivment-progress: 34
+}
+[data-progress="35"] {
+	--achivment-progress: 35
+}
+[data-progress="36"] {
+	--achivment-progress: 36
+}
+[data-progress="37"] {
+	--achivment-progress: 37
+}
+[data-progress="38"] {
+	--achivment-progress: 38
+}
+[data-progress="39"] {
+	--achivment-progress: 39
+}
+[data-progress="40"] {
+	--achivment-progress: 40
+}
+[data-progress="41"] {
+	--achivment-progress: 41
+}
+[data-progress="42"] {
+	--achivment-progress: 42
+}
+[data-progress="43"] {
+	--achivment-progress: 43
+}
+[data-progress="44"] {
+	--achivment-progress: 44
+}
+[data-progress="45"] {
+	--achivment-progress: 45
+}
+[data-progress="46"] {
+	--achivment-progress: 46
+}
+[data-progress="47"] {
+	--achivment-progress: 47
+}
+[data-progress="48"] {
+	--achivment-progress: 48
+}
+[data-progress="49"] {
+	--achivment-progress: 49
+}
+[data-progress="50"] {
+	--achivment-progress: 50
+}
+[data-progress="51"] {
+	--achivment-progress: 51
+}
+[data-progress="52"] {
+	--achivment-progress: 52
+}
+[data-progress="53"] {
+	--achivment-progress: 53
+}
+[data-progress="54"] {
+	--achivment-progress: 54
+}
+[data-progress="55"] {
+	--achivment-progress: 55
+}
+[data-progress="56"] {
+	--achivment-progress: 56
+}
+[data-progress="57"] {
+	--achivment-progress: 57
+}
+[data-progress="58"] {
+	--achivment-progress: 58
+}
+[data-progress="59"] {
+	--achivment-progress: 59
+}
+[data-progress="60"] {
+	--achivment-progress: 60
+}
+[data-progress="61"] {
+	--achivment-progress: 61
+}
+[data-progress="62"] {
+	--achivment-progress: 62
+}
+[data-progress="63"] {
+	--achivment-progress: 63
+}
+[data-progress="64"] {
+	--achivment-progress: 64
+}
+[data-progress="65"] {
+	--achivment-progress: 65
+}
+[data-progress="66"] {
+	--achivment-progress: 66
+}
+[data-progress="67"] {
+	--achivment-progress: 67
+}
+[data-progress="68"] {
+	--achivment-progress: 68
+}
+[data-progress="69"] {
+	--achivment-progress: 69
+}
+[data-progress="70"] {
+	--achivment-progress: 70
+}
+[data-progress="71"] {
+	--achivment-progress: 71
+}
+[data-progress="72"] {
+	--achivment-progress: 72
+}
+[data-progress="73"] {
+	--achivment-progress: 73
+}
+[data-progress="74"] {
+	--achivment-progress: 74
+}
+[data-progress="75"] {
+	--achivment-progress: 75
+}
+[data-progress="76"] {
+	--achivment-progress: 76
+}
+[data-progress="77"] {
+	--achivment-progress: 77
+}
+[data-progress="78"] {
+	--achivment-progress: 78
+}
+[data-progress="79"] {
+	--achivment-progress: 79
+}
+[data-progress="80"] {
+	--achivment-progress: 80
+}
+[data-progress="81"] {
+	--achivment-progress: 81
+}
+[data-progress="82"] {
+	--achivment-progress: 82
+}
+[data-progress="83"] {
+	--achivment-progress: 83
+}
+[data-progress="84"] {
+	--achivment-progress: 84
+}
+[data-progress="85"] {
+	--achivment-progress: 85
+}
+[data-progress="86"] {
+	--achivment-progress: 86
+}
+[data-progress="87"] {
+	--achivment-progress: 87
+}
+[data-progress="88"] {
+	--achivment-progress: 88
+}
+[data-progress="89"] {
+	--achivment-progress: 89
+}
+[data-progress="90"] {
+	--achivment-progress: 90
+}
+[data-progress="91"] {
+	--achivment-progress: 91
+}
+[data-progress="92"] {
+	--achivment-progress: 92
+}
+[data-progress="93"] {
+	--achivment-progress: 93
+}
+[data-progress="94"] {
+	--achivment-progress: 94
+}
+[data-progress="95"] {
+	--achivment-progress: 95
+}
+[data-progress="96"] {
+	--achivment-progress: 96
+}
+[data-progress="97"] {
+	--achivment-progress: 97
+}
+[data-progress="98"] {
+	--achivment-progress: 98
+}
+[data-progress="99"] {
+	--achivment-progress: 99
+}
+[data-progress="100"] {
+	--achivment-progress: 100
+}
