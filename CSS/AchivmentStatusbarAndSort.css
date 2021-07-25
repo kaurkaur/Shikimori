@@ -20,7 +20,7 @@
 
 	--achivment-sort: -1;
 
-	--achivment-progressbar-bg: url(https://sun9-19.userapi.com/impg/bTGow4bi6jDsq0vtsjaw_MPoBxM6JPvm4HMqcg/uWM0Qehw29c.jpg?size=109x109&quality=96&sign=55bdc2a1da9426e09cac8cfce3f64520&type=album);
+	--achivment-progressbar-bg: url(https://raw.githubusercontent.com/kaurkaur/Shikimori/master/img/bg_white.jpg);
 
 	--achivment-title-height: calc(20px + var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2 + var(--achivment-progressbar-position-b));
 }*/
