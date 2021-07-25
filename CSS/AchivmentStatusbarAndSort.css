@@ -5,25 +5,35 @@
  * Copyright (c) 2021 kaur
  */
 
-/*:root {
+:root {
+	/*Переименовываем "достижения"*/
 	--achivment-rename: 'Ачивки';
 
+	/*отступ прогрессбара снизу*/
 	--achivment-progressbar-position-b: 6px;
 
+	/*отступ прогрессбара сбоку*/
 	--achivment-progressbar-position-lr: 8px;
 
+	/*высота прогрессбара*/
 	--achivment-progressbar-height: 3px;
 
+	/*толщина обводки прогрессбара*/
 	--achivment-progressbar-border: 1px;
 
+	/*отступ между достижениями*/
 	--achivment-margin: 1%;
 
+	/*сортировка ачивок: -1 - от больших к меньшим, 1 - от меньших к большим, 0 - без сортировки*/
 	--achivment-sort: -1;
 
+	/*картинка подложки прогрессбара*/
 	--achivment-progressbar-bg: url(https://raw.githubusercontent.com/kaurkaur/Shikimori/master/img/bg_white.jpg);
 
+	/*высота блока с названием достижения*/
 	--achivment-title-height: calc(20px + var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2 + var(--achivment-progressbar-position-b));
-}*/
+}
+
 .p-profiles-show .achievements {
 	display: flex;
 	flex-direction: column;
