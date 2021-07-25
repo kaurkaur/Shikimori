@@ -120,10 +120,10 @@
 	border-color: #2984c4;
 	color: #fff;
 }
-.subheadline > a::before,
-.subheadline > a:hover::before,
-.subheadline > a:focus::before,
-.subheadline > a:active::before {
+.p-profiles-show .achievements .subheadline > a::before,
+.p-profiles-show .achievements .subheadline > a:hover::before,
+.p-profiles-show .achievements .subheadline > a:focus::before,
+.p-profiles-show .achievements .subheadline > a:active::before {
 	font-family: var(--font-alt);
 	letter-spacing: normal;
 	content: "Все "var(--achivment-rename);
