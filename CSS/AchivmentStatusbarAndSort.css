@@ -172,10 +172,15 @@
 	height: var(--achivment-progressbar-height);
 	z-index: 1;
 	background: #6295bd;
+    right:auto;
+    top:auto;
 	left: calc(var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border));
 	bottom: calc(var(--achivment-progressbar-position-b) + var(--achivment-progressbar-border));
 	width: calc(1% * var(--achivment-progress) - (var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border))*2);
+    display:block!important;
+    opacity:1!important;
 }
+
 .b-achievement .c-image .inner a .border {
 	border-width: 1px;
 }
