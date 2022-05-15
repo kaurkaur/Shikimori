@@ -27,9 +27,10 @@
 	/*сортировка ачивок: -1 - от больших к меньшим, 1 - от меньших к большим, 0 - без сортировки*/
 	--achivment-sort: -1;
 
-	/*картинка подложки прогрессбара*/
-	--achivment-progressbar-bg: url(https://raw.githubusercontent.com/kaurkaur/Shikimori/master/img/bg_white.jpg);
+    /*цвет подложки прогресс бара*/
+	--achivment-progressbar-bg-color: #fff;
 
+    
 	/*высота блока с названием достижения*/
 	--achivment-title-height: calc(20px + var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2 + var(--achivment-progressbar-position-b));
 }
@@ -158,7 +159,7 @@
 	background-repeat: no-repeat;
 	background-position: var(--achivment-progressbar-position-lr) calc(var(--achivment-title-height) - var(--achivment-progressbar-position-b) - var(--achivment-progressbar-height) - var(--achivment-progressbar-border)*2);
 	background-size: calc(100% - var(--achivment-progressbar-position-lr)*2) calc(var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2);
-	background-image: var(--achivment-progressbar-bg);
+    background-image: linear-gradient(var(--achivment-progressbar-bg-color), var(--achivment-progressbar-bg-color));
 }
 .p-profiles-show .achievements .cc-franchises .b-badge::before {
 	content: attr(original-title)" ("attr(data-progress)"%)";
