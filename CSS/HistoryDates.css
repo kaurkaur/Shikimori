@@ -23,7 +23,7 @@
 /* Дата */
 .p-user_history-index .history-page .history-interval p .date::before {
   position: relative;
-  width: 78px; /* Размер даты */
+  width: 72px; /* Размер даты */
   margin-right: 10px; /* Отступ между датой и временем */
   white-space: nowrap;
   z-index: 1;
@@ -32,8 +32,8 @@
 /* Время */
 .p-user_history-index .history-page .history-interval p .date::after {
   content: attr(datetime);
-  width: 35px; /* Размер времени */
-  text-indent: -77px; /* Размер даты */
+  width: 34px; /* Размер времени */
+  text-indent: -72px; /* Размер даты */
 }
 
 /*Установка переменны дней*/
@@ -93,6 +93,6 @@
     width: 78px; /* Размер даты */
   }
   .p-user_history-index .history-page .history-interval p .date::after {
-    text-indent: -77px; /* Размер даты */
+    text-indent: -78px; /* Размер даты */
   }
 }
