@@ -6,13 +6,13 @@
  */
 
 /* Дата + Время */
-.p-user_history-index .history-page .history-interval p .date {
+.b-user_history-line .date {
   font-size: 0;
   white-space: nowrap;
 }
 
-.p-user_history-index .history-page .history-interval p .date::before,
-.p-user_history-index .history-page .history-interval p .date::after {
+.b-user_history-line .date::before,
+.b-user_history-line .date::after {
   display: inline-block;
   vertical-align: top;
   font-family: monospace;
@@ -21,7 +21,7 @@
 }
 
 /* Дата */
-.p-user_history-index .history-page .history-interval p .date::before {
+.b-user_history-line .date::before {
   position: relative;
   width: 72px; /* Размер даты */
   margin-right: 10px; /* Отступ между датой и временем */
@@ -30,69 +30,69 @@
 }
 
 /* Время */
-.p-user_history-index .history-page .history-interval p .date::after {
+.b-user_history-line .date::after {
   content: attr(datetime);
   width: 34px; /* Размер времени */
   text-indent: -72px; /* Размер даты */
 }
 
 /*Установка переменны дней*/
-.p-user_history-index .history-page .history-interval p .date[datetime*='-01T']::before{--HD-day: '01';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-02T']::before{--HD-day: '02';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-03T']::before{--HD-day: '03';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-04T']::before{--HD-day: '04';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-05T']::before{--HD-day: '05';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-06T']::before{--HD-day: '06';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-07T']::before{--HD-day: '07';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-08T']::before{--HD-day: '08';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-09T']::before{--HD-day: '09';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-10T']::before{--HD-day: '10';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-11T']::before{--HD-day: '11';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-12T']::before{--HD-day: '12';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-13T']::before{--HD-day: '13';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-14T']::before{--HD-day: '14';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-15T']::before{--HD-day: '15';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-16T']::before{--HD-day: '16';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-17T']::before{--HD-day: '17';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-18T']::before{--HD-day: '18';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-19T']::before{--HD-day: '19';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-20T']::before{--HD-day: '20';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-21T']::before{--HD-day: '21';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-22T']::before{--HD-day: '22';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-23T']::before{--HD-day: '23';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-24T']::before{--HD-day: '24';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-25T']::before{--HD-day: '25';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-26T']::before{--HD-day: '26';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-27T']::before{--HD-day: '27';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-28T']::before{--HD-day: '28';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-29T']::before{--HD-day: '29';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-30T']::before{--HD-day: '30';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-31T']::before{--HD-day: '31';}
+.b-user_history-line .date[datetime*='-01T']::before{--HD-day: '01';}
+.b-user_history-line .date[datetime*='-02T']::before{--HD-day: '02';}
+.b-user_history-line .date[datetime*='-03T']::before{--HD-day: '03';}
+.b-user_history-line .date[datetime*='-04T']::before{--HD-day: '04';}
+.b-user_history-line .date[datetime*='-05T']::before{--HD-day: '05';}
+.b-user_history-line .date[datetime*='-06T']::before{--HD-day: '06';}
+.b-user_history-line .date[datetime*='-07T']::before{--HD-day: '07';}
+.b-user_history-line .date[datetime*='-08T']::before{--HD-day: '08';}
+.b-user_history-line .date[datetime*='-09T']::before{--HD-day: '09';}
+.b-user_history-line .date[datetime*='-10T']::before{--HD-day: '10';}
+.b-user_history-line .date[datetime*='-11T']::before{--HD-day: '11';}
+.b-user_history-line .date[datetime*='-12T']::before{--HD-day: '12';}
+.b-user_history-line .date[datetime*='-13T']::before{--HD-day: '13';}
+.b-user_history-line .date[datetime*='-14T']::before{--HD-day: '14';}
+.b-user_history-line .date[datetime*='-15T']::before{--HD-day: '15';}
+.b-user_history-line .date[datetime*='-16T']::before{--HD-day: '16';}
+.b-user_history-line .date[datetime*='-17T']::before{--HD-day: '17';}
+.b-user_history-line .date[datetime*='-18T']::before{--HD-day: '18';}
+.b-user_history-line .date[datetime*='-19T']::before{--HD-day: '19';}
+.b-user_history-line .date[datetime*='-20T']::before{--HD-day: '20';}
+.b-user_history-line .date[datetime*='-21T']::before{--HD-day: '21';}
+.b-user_history-line .date[datetime*='-22T']::before{--HD-day: '22';}
+.b-user_history-line .date[datetime*='-23T']::before{--HD-day: '23';}
+.b-user_history-line .date[datetime*='-24T']::before{--HD-day: '24';}
+.b-user_history-line .date[datetime*='-25T']::before{--HD-day: '25';}
+.b-user_history-line .date[datetime*='-26T']::before{--HD-day: '26';}
+.b-user_history-line .date[datetime*='-27T']::before{--HD-day: '27';}
+.b-user_history-line .date[datetime*='-28T']::before{--HD-day: '28';}
+.b-user_history-line .date[datetime*='-29T']::before{--HD-day: '29';}
+.b-user_history-line .date[datetime*='-30T']::before{--HD-day: '30';}
+.b-user_history-line .date[datetime*='-31T']::before{--HD-day: '31';}
 
 /*Установка переменны месяцев*/
-.p-user_history-index .history-page .history-interval p .date[datetime*='-01-']::before{--HD-month: 'янв';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-02-']::before{--HD-month: 'фев';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-03-']::before{--HD-month: 'мар';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-04-']::before{--HD-month: 'апр';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-05-']::before{--HD-month: 'май';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-06-']::before{--HD-month: 'июн';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-07-']::before{--HD-month: 'июл';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-08-']::before{--HD-month: 'авг';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-09-']::before{--HD-month: 'сен';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-10-']::before{--HD-month: 'окт';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-11-']::before{--HD-month: 'ноя';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-12-']::before{--HD-month: 'дек';}
+.b-user_history-line .date[datetime*='-01-']::before{--HD-month: 'янв';}
+.b-user_history-line .date[datetime*='-02-']::before{--HD-month: 'фев';}
+.b-user_history-line .date[datetime*='-03-']::before{--HD-month: 'мар';}
+.b-user_history-line .date[datetime*='-04-']::before{--HD-month: 'апр';}
+.b-user_history-line .date[datetime*='-05-']::before{--HD-month: 'май';}
+.b-user_history-line .date[datetime*='-06-']::before{--HD-month: 'июн';}
+.b-user_history-line .date[datetime*='-07-']::before{--HD-month: 'июл';}
+.b-user_history-line .date[datetime*='-08-']::before{--HD-month: 'авг';}
+.b-user_history-line .date[datetime*='-09-']::before{--HD-month: 'сен';}
+.b-user_history-line .date[datetime*='-10-']::before{--HD-month: 'окт';}
+.b-user_history-line .date[datetime*='-11-']::before{--HD-month: 'ноя';}
+.b-user_history-line .date[datetime*='-12-']::before{--HD-month: 'дек';}
 
-.p-user_history-index .history-page .history-interval p .date::before{
+.b-user_history-line .date::before{
 	content: var(--HD-day)' 'var(--HD-month)' 'attr(datetime);
 }
 
 /* FF FIX */
 @-moz-document url-prefix() {
-  .p-user_history-index .history-page .history-interval p .date::before {
+  .b-user_history-line .date::before {
     width: 78px; /* Размер даты */
   }
-  .p-user_history-index .history-page .history-interval p .date::after {
+  .b-user_history-line .date::after {
     text-indent: -78px; /* Размер даты */
   }
 }
