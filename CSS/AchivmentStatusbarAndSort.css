@@ -221,6 +221,11 @@
     border-radius: calc(var(--achivment-progressbar-height)*var(--radius_switcher,0));
 }
 
+.p-profiles-show .achievements .cc-franchises .b-badge::after {
+	width: calc(1% * var(--achivment-progress) - (var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border))*2 - var(--achivment-progressbar-border)/2);
+}
+
+
 .b-achievement .c-image .inner a .border {
 	border-width: 1px;
 }
