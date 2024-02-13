@@ -2,7 +2,7 @@
  * Achivment Statusbar and Sort
  * Shikimori.org – CSS Theme
  * MIT License
- * Copyright (c) 2021 kaur
+ * Copyright (c) 2024 kaur
  */
 
 :root {
@@ -16,7 +16,7 @@
 	--achivment-progressbar-position-lr: 8px;
 
 	/*высота прогрессбара*/
-	--achivment-progressbar-height: 3px;
+	--achivment-progressbar-height: 4px;
 
 	/*толщина обводки прогрессбара*/
 	--achivment-progressbar-border: 1px;
@@ -29,6 +29,9 @@
 
     /*цвет подложки прогресс бара*/
 	--achivment-progressbar-bg-color: #fff;
+    
+    /*Скругления 1-вкл 0-выкл*/
+    --radius_switcher:0;
 
     
 	/*высота блока с названием достижения*/
@@ -159,13 +162,48 @@
 	background-repeat: no-repeat;
 	background-position: var(--achivment-progressbar-position-lr) calc(var(--achivment-title-height) - var(--achivment-progressbar-position-b) - var(--achivment-progressbar-height) - var(--achivment-progressbar-border)*2);
 	background-size: calc(100% - var(--achivment-progressbar-position-lr)*2) calc(var(--achivment-progressbar-height) + var(--achivment-progressbar-border)*2);
-    background-image: linear-gradient(var(--achivment-progressbar-bg-color), var(--achivment-progressbar-bg-color));
+    background-image:
+    radial-gradient(
+      circle at calc(0% + var(--achivment-progressbar-height)),
+      var(--achivment-progressbar-bg-color) var(--achivment-progressbar-height),
+      transparent 0),
+    radial-gradient(
+      circle at calc(100% - var(--achivment-progressbar-height)),
+      var(--achivment-progressbar-bg-color) var(--achivment-progressbar-height),
+      transparent 0),
+    linear-gradient(
+      to right,
+      transparent calc(0% + var(--achivment-progressbar-height)*var(--radius_switcher,0)),
+      var(--achivment-progressbar-bg-color) calc(0% + var(--achivment-progressbar-height)*var(--radius_switcher,0)) calc(100% - var(--achivment-progressbar-height)*var(--radius_switcher,0)),
+      transparent calc(100% - var(--achivment-progressbar-height)*var(--radius_switcher,0))
+  );
 }
+
+/*author fix*/
+.cc-authors .b-achievement.is-badge::before {
+    background-image:
+    radial-gradient(
+      circle at calc(0% + var(--achivment-progressbar-height)),
+      var(--achivment-progressbar-bg-color) var(--achivment-progressbar-height),
+      transparent 0),
+    radial-gradient(
+      circle at calc(100% - var(--achivment-progressbar-height) - .5px),
+      var(--achivment-progressbar-bg-color) var(--achivment-progressbar-height),
+      transparent 0),
+    linear-gradient(
+      to right,
+      transparent calc(0% + var(--achivment-progressbar-height)*var(--radius_switcher,0)),
+      var(--achivment-progressbar-bg-color) calc(0% + var(--achivment-progressbar-height)*var(--radius_switcher,0)) calc(100% - var(--achivment-progressbar-height)*var(--radius_switcher,0)),
+      transparent calc(100% - var(--achivment-progressbar-height)*var(--radius_switcher,0))
+  );
+}
+
 .p-profiles-show .achievements .cc-franchises .b-badge::before {
 	content: attr(original-title)" ("attr(data-progress)"%)";
 	display: block;
 	opacity: 1;
 }
+
 .b-achievement.is-badge::after,
 .p-profiles-show .achievements .cc-franchises .b-badge::after {
 	content: '';
@@ -177,9 +215,10 @@
     top:auto;
 	left: calc(var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border));
 	bottom: calc(var(--achivment-progressbar-position-b) + var(--achivment-progressbar-border));
-	width: calc(1% * var(--achivment-progress) - (var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border))*2);
+	width: calc(1% * var(--achivment-progress) - (var(--achivment-progressbar-position-lr) + var(--achivment-progressbar-border))*2 - var(--achivment-progressbar-border)/2*var(--radius_switcher,0));
     display:block!important;
     opacity:1!important;
+    border-radius: calc(var(--achivment-progressbar-height)*var(--radius_switcher,0));
 }
 
 .b-achievement .c-image .inner a .border {
